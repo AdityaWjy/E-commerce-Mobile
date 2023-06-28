@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods Network</title>
+    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="icon" href="/assets/food-network.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/js/bootstrap.js"
+    />
+    <script src="./src/script.js"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img
+          src="./assets/food-network.svg"
+          style="width: 50px; height: 50px"
+          class="ms-2"
+        />
+        <span class="logo me-auto ms-2 fs-5 fw-bold">Food Network</span>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto ms-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <div class="container mb-5">
+      <div class="hero-img d-flex justify-content-center align-items-center">
+        <lottie-player
+          src="https://assets9.lottiefiles.com/packages/lf20_GUQObWT5Mw.json"
+          background="transparent"
+          speed="1"
+          style="width: 350px; height: 350px; padding: 0px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div class="hero-content container">
+        <p class="fw-medium fs-5">
+          Selamat datang di Restaurant Food Network: Menjelajahi Dunia Kuliner
+          Restoran Terbaik!
+        </p>
+
+        <a
+          href="#articles"
+          class="btn btn-danger fw-medium fs-5"
+          id="menjelajah"
+          >Pergi Menjelajah
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="23"
+            height="23"
+            fill="currentColor"
+            class="bi bi-rocket mb-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8Z"
+            />
+            <path
+              d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.495 3.495 0 0 0-.463-.315A2.19 2.19 0 0 0 8.25.064.546.546 0 0 0 8 0a.549.549 0 0 0-.266.073 2.312 2.312 0 0 0-.142.08 3.67 3.67 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635.85 0 1.7-.207 2.4-.635.067.03.132.056.196.083.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562l-1.499-1.83ZM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935L12 10.445ZM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199ZM8.009 1.073c.063.04.14.094.226.163.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13c-.781 0-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32.09-.076.17-.135.236-.18Z"
+            />
+            <path
+              d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"
+            /></svg
+        ></a>
+      </div>
+    </div>
+    <!-- hero end -->
+
+    <!-- article start -->
+    <div
+      id="articles"
+      data-bs-spy="scroll"
+      data-bs-target="#menjelajah"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example container mb-3"
+      tabindex="0"
+    >
+      <h2 class="container">
+        Article
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          fill="currentColor"
+          class="bi bi-bag-heart mb-1"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
+          />
+        </svg>
+      </h2>
+      <!-- row 1 start -->
+      <div class="row align-items-center mb-3">
+        <div class="col">
+          <div class="border rounded p-1">
+            <div class="bg-article d-flex justify-content-center">
+              <lottie-player
+                src="https://assets6.lottiefiles.com/packages/lf20_ihfepos8.json"
+                background="transparent"
+                speed="1"
+                style="width: 120px; height: 120px"
+                loop
+                autoplay
+                onclick="tambahMakanan('Burger', 49000)"
+              ></lottie-player>
+            </div>
+            <h5 class="text-center">Burger</h5>
+            <div class="d-flex justify-content-center gap-1">
+              <h5 class="text-center badge text-bg-primary text-white">
+                Rp. 49.000
+              </h5>
+              <h5
+                class="text-center badge text-bg-danger text-white text-decoration-line-through"
+              >
+                Rp. 59.000
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="border rounded p-1">
+            <div class="bg-article d-flex justify-content-center">
+              <lottie-player
+                src="https://assets10.lottiefiles.com/packages/lf20_1ybf5iqh.json"
+                background="transparent"
+                speed="1"
+                style="width: 120px; height: 120px"
+                loop
+                autoplay
+                onclick="tambahMakanan('Pizza', 45000)"
+              ></lottie-player>
+            </div>
+            <h5 class="text-center">Pizza</h5>
+            <div class="d-flex justify-content-center gap-1">
+              <h5 class="text-center badge text-bg-primary text-white">
+                Rp. 45.000
+              </h5>
+              <h5
+                class="text-center badge text-bg-danger text-white text-decoration-line-through"
+              >
+                Rp. 55.000
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- row 1 end -->
+      <!-- row 2 start -->
+      <div class="row align-items-center mb-3">
+        <div class="col">
+          <div class="border rounded p-1">
+            <div class="bg-article d-flex justify-content-center">
+              <lottie-player
+                src="https://assets4.lottiefiles.com/packages/lf20_lf5qjri7.json"
+                background="transparent"
+                speed="1"
+                style="width: 120px; height: 120px"
+                loop
+                autoplay
+                onclick="tambahMakanan('Hot Dog', 35000)"
+              ></lottie-player>
+            </div>
+            <h5 class="text-center">Hot Dog</h5>
+            <div class="d-flex justify-content-center gap-1">
+              <h5 class="text-center badge text-bg-primary text-white">
+                Rp. 35.000
+              </h5>
+              <h5
+                class="text-center badge text-bg-danger text-white text-decoration-line-through"
+              >
+                Rp. 42.000
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="border rounded p-1">
+            <div class="bg-article d-flex justify-content-center">
+              <lottie-player
+                src="https://assets4.lottiefiles.com/packages/lf20_1bcbl7gt.json"
+                background="transparent"
+                speed="1"
+                style="width: 120px; height: 120px"
+                loop
+                autoplay
+                onclick="tambahMakanan('French Fries', 25000)"
+              ></lottie-player>
+            </div>
+            <h5 class="text-center">French Fries</h5>
+            <div class="d-flex justify-content-center gap-1">
+              <h5 class="text-center badge text-bg-primary text-white">
+                Rp. 25.000
+              </h5>
+              <h5
+                class="text-center badge text-bg-danger text-white text-decoration-line-through"
+              >
+                Rp. 32.000
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- row 2 end -->
+      <!-- row 3 start -->
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="border rounded p-1">
+            <div class="bg-article d-flex justify-content-center">
+              <lottie-player
+                src="https://assets7.lottiefiles.com/packages/lf20_omxvobfc.json"
+                background="transparent"
+                speed="1"
+                style="width: 120px; height: 120px"
+                loop
+                autoplay
+                onclick="tambahMakanan('Kebab', 18000)"
+              ></lottie-player>
+            </div>
+            <h5 class="text-center">Kebab</h5>
+            <div class="d-flex justify-content-center gap-1">
+              <h5 class="text-center badge text-bg-primary text-white">
+                Rp. 18.000
+              </h5>
+              <h5
+                class="text-center badge text-bg-danger text-white text-decoration-line-through"
+              >
+                Rp. 22.000
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="border rounded p-1">
+            <div class="bg-article d-flex justify-content-center">
+              <lottie-player
+                src="https://assets4.lottiefiles.com/packages/lf20_4ma0ldzc.json"
+                background="transparent"
+                speed="1"
+                style="width: 120px; height: 120px"
+                loop
+                autoplay
+                onclick="tambahMakanan('Soda Cup', 15000)"
+              ></lottie-player>
+            </div>
+            <h5 class="text-center">Soda Cup</h5>
+            <div class="d-flex justify-content-center gap-1">
+              <h5 class="text-center badge text-bg-primary text-white">
+                Rp. 15.000
+              </h5>
+              <h5
+                class="text-center badge text-bg-danger text-white text-decoration-line-through"
+              >
+                Rp. 18.000
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- row 3 end -->
+    </div>
+    <!-- article end -->
+
+    <!-- form start -->
+    <div class="container">
+      <h2 class="container">
+        Form
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          fill="currentColor"
+          class="bi bi-clipboard-heart mb-1"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Z"
+          />
+          <path
+            d="M3 1.5h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"
+          />
+          <path
+            d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982Z"
+          />
+        </svg>
+      </h2>
+      <form class="mb-3" id="checkout-form" onsubmit="submitForm(event)">
+        <div class="row">
+          <div class="col">
+            <label for="name" class="form-label">Name : </label>
+            <input type="text" name="name" id="nama" class="form-control" required />
+          </div>
+          <div class="col">
+            <label for="table" class="form-label">No table : </label>
+            <input
+              type="number"
+              name="table"
+              id="nomor-meja"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <h2 class="ms-3 mt-2">
+            Cart
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="currentColor"
+              class="bi bi-cart-check mb-1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
+              />
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+          </h2>
+
+          <div id="keranjang">
+            <!-- table cart start -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Harga</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="makanan-list"></tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="1">Total</th>
+                  <th id="total-harga" colspan="1">0</th>
+                </tr>
+              </tfoot>
+            </table>
+            <!-- table cart end -->
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success w-100 mt-3 fw-semibold">
+          Checkout
+        </button>
+      </form>
+    </div>
+    <!-- form end -->
+
+    <!-- cooming soon start-->
+    <div class="container">
+      
+
+      <div class="cooming-soon d-flex justify-content-center align-items-center">
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_gxhmijxe.json"
+          background="transparent"
+          speed="1"
+          style="width: 350px; height: 350px; padding: 0px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h2 class="ms-2">
+        Cooming soon
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          fill="currentColor"
+          class="bi bi-question-lg mb-1"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"
+          />
+        </svg>
+      </h2>
+        <p class="fw-medium fs-5 ms-1">Stay tuned as we prepare to launch our delivery service soon. You'll be able to enjoy delicious meals from your favorite restaurants, delivered right to your doorstep.</p>
+        
+    </div>
+
+    <!-- cooming soon end -->
+
+
+    <!-- footer start -->
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start  text-muted">
+  <!-- Section: Social media -->
+  
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i> Foods Network
+          </h6>
+          <p>
+            Savor the moments Mengajak orang-orang untuk menikmati setiap momen dalam pengalaman makan dengan hidangan yang istimewa dan kenikmatan yang memikat.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+       
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p>@ipologize</p>
+     
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 w-full fw-medium" style="background-color: rgba(0, 0, 0, 0.05);">
+    Food Network | AdityaWjy
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- footer end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+  
+  </style>
+</html>
+
