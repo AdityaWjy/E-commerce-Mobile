@@ -51,16 +51,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse ms-2 mt-1" id="navbarText">
           <ul class="navbar-nav ms-auto ms-2 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-danger fw-bold" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#articles">Article</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#cooming-soon">Cooming soon</a>
             </li>
           </ul>
         </div>
@@ -69,7 +69,7 @@
     <!-- navbar end -->
 
     <!-- hero start -->
-    <div class="container mb-5">
+    <div class="container mb-5" id="home">
       <div class="hero-img d-flex justify-content-center align-items-center">
         <lottie-player
           src="https://assets9.lottiefiles.com/packages/lf20_GUQObWT5Mw.json"
@@ -140,8 +140,8 @@
         </svg>
       </h2>
       <!-- row 1 start -->
-      <div class="row align-items-center mb-3">
-        <div class="col">
+      <div class="row align-items-center mb-3 d-flex">
+        <div class="col-6">
           <div class="border rounded p-1">
             <div class="bg-article d-flex justify-content-center">
               <lottie-player
@@ -156,18 +156,22 @@
             </div>
             <h5 class="text-center">Burger</h5>
             <div class="d-flex justify-content-center gap-1">
-              <h5 class="text-center badge text-bg-primary text-white">
+              <span
+                class="text-center badge text-bg-primary text-white"
+                style="font-size: 11px"
+              >
                 Rp. 49.000
-              </h5>
-              <h5
+              </span>
+              <span
                 class="text-center badge text-bg-danger text-white text-decoration-line-through"
+                style="font-size: 11px"
               >
                 Rp. 59.000
-              </h5>
+              </span>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-6">
           <div class="border rounded p-1">
             <div class="bg-article d-flex justify-content-center">
               <lottie-player
@@ -182,14 +186,18 @@
             </div>
             <h5 class="text-center">Pizza</h5>
             <div class="d-flex justify-content-center gap-1">
-              <h5 class="text-center badge text-bg-primary text-white">
+              <span
+                style="font-size: 11px"
+                class="text-center badge text-bg-primary text-white"
+              >
                 Rp. 45.000
-              </h5>
-              <h5
+              </span>
+              <span
+                style="font-size: 11px"
                 class="text-center badge text-bg-danger text-white text-decoration-line-through"
               >
                 Rp. 55.000
-              </h5>
+              </span>
             </div>
           </div>
         </div>
@@ -197,7 +205,7 @@
       <!-- row 1 end -->
       <!-- row 2 start -->
       <div class="row align-items-center mb-3">
-        <div class="col">
+        <div class="col-6">
           <div class="border rounded p-1">
             <div class="bg-article d-flex justify-content-center">
               <lottie-player
@@ -207,23 +215,27 @@
                 style="width: 120px; height: 120px"
                 loop
                 autoplay
-                onclick="tambahMakanan('Hot Dog', 35000)"
+                onclick="tambahMakanan('Hotdog', 35000)"
               ></lottie-player>
             </div>
             <h5 class="text-center">Hot Dog</h5>
             <div class="d-flex justify-content-center gap-1">
-              <h5 class="text-center badge text-bg-primary text-white">
+              <span
+                style="font-size: 11px"
+                class="text-center badge text-bg-primary text-white"
+              >
                 Rp. 35.000
-              </h5>
-              <h5
+              </span>
+              <span
+                style="font-size: 11px"
                 class="text-center badge text-bg-danger text-white text-decoration-line-through"
               >
                 Rp. 42.000
-              </h5>
+              </span>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-6">
           <div class="border rounded p-1">
             <div class="bg-article d-flex justify-content-center">
               <lottie-player
@@ -233,19 +245,23 @@
                 style="width: 120px; height: 120px"
                 loop
                 autoplay
-                onclick="tambahMakanan('French Fries', 25000)"
+                onclick="tambahMakanan('Kentang', 25000)"
               ></lottie-player>
             </div>
             <h5 class="text-center">French Fries</h5>
             <div class="d-flex justify-content-center gap-1">
-              <h5 class="text-center badge text-bg-primary text-white">
+              <span
+                style="font-size: 11px"
+                class="text-center badge text-bg-primary text-white"
+              >
                 Rp. 25.000
-              </h5>
-              <h5
+              </span>
+              <span
+                style="font-size: 11px"
                 class="text-center badge text-bg-danger text-white text-decoration-line-through"
               >
                 Rp. 32.000
-              </h5>
+              </span>
             </div>
           </div>
         </div>
@@ -253,7 +269,7 @@
       <!-- row 2 end -->
       <!-- row 3 start -->
       <div class="row align-items-center">
-        <div class="col">
+        <div class="col-6">
           <div class="border rounded p-1">
             <div class="bg-article d-flex justify-content-center">
               <lottie-player
@@ -268,18 +284,24 @@
             </div>
             <h5 class="text-center">Kebab</h5>
             <div class="d-flex justify-content-center gap-1">
-              <h5 class="text-center badge text-bg-primary text-white">
+              <span
+                style="font-size: 11px"
+                ;
+                class="text-center badge text-bg-primary text-white"
+              >
                 Rp. 18.000
-              </h5>
-              <h5
+              </span>
+              <span
+                style="font-size: 11px"
+                ;
                 class="text-center badge text-bg-danger text-white text-decoration-line-through"
               >
                 Rp. 22.000
-              </h5>
+              </span>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-6">
           <div class="border rounded p-1">
             <div class="bg-article d-flex justify-content-center">
               <lottie-player
@@ -289,19 +311,25 @@
                 style="width: 120px; height: 120px"
                 loop
                 autoplay
-                onclick="tambahMakanan('Soda Cup', 15000)"
+                onclick="tambahMakanan('Soda', 15000)"
               ></lottie-player>
             </div>
             <h5 class="text-center">Soda Cup</h5>
             <div class="d-flex justify-content-center gap-1">
-              <h5 class="text-center badge text-bg-primary text-white">
+              <span
+                style="font-size: 11px"
+                ;
+                class="text-center badge text-bg-primary text-white"
+              >
                 Rp. 15.000
-              </h5>
-              <h5
+              </span>
+              <span
+                style="font-size: 11px"
+                ;
                 class="text-center badge text-bg-danger text-white text-decoration-line-through"
               >
                 Rp. 18.000
-              </h5>
+              </span>
             </div>
           </div>
         </div>
@@ -312,29 +340,25 @@
 
     <!-- form start -->
     <div class="container">
-      <h2 class="container">
-        Form
+      <h2 class="ms-3 mt-2">
+        Cart
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"
           height="23"
           fill="currentColor"
-          class="bi bi-clipboard-heart mb-1"
+          class="bi bi-cart-check mb-1"
           viewBox="0 0 16 16"
         >
           <path
-            fill-rule="evenodd"
-            d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Z"
+            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
           />
           <path
-            d="M3 1.5h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"
-          />
-          <path
-            d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982Z"
+            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
           />
         </svg>
       </h2>
-      <form class="mb-3" id="checkout-form" onsubmit="submitForm(event)">
+      <form class="mb-4 ms-1" id="checkout-form" onsubmit="submitForm(event)">
         <div class="row">
           <div class="col">
             <label for="name" class="form-label">Name : </label>
@@ -357,38 +381,19 @@
             />
           </div>
 
-          <h2 class="ms-3 mt-2">
-            Cart
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="23"
-              height="23"
-              fill="currentColor"
-              class="bi bi-cart-check mb-1"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
-              />
-              <path
-                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
-              />
-            </svg>
-          </h2>
-
           <div id="keranjang">
             <!-- table cart start -->
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">Nama</th>
-                  <th scope="col">Harga</th>
-                  <th scope="col">Qty</th>
-                  <th scope="col">Total</th>
-                  <th scope="col">Aksi</th>
+                  <th>Nama</th>
+                  <th>Harga</th>
+                  <th>Qty</th>
+
+                  <th>Aksi</th>
                 </tr>
               </thead>
-              <tbody id="makanan-list"></tbody>
+              <tbody id="makanan-list" style="font-size: 14px;"></tbody>
               <tfoot>
                 <tr>
                   <th colspan="1">Total</th>
@@ -407,7 +412,7 @@
     <!-- form end -->
 
     <!-- cooming soon start-->
-    <div class="container">
+    <div class="container" id="cooming-soon">
       <div
         class="cooming-soon d-flex justify-content-center align-items-center"
       >
@@ -503,7 +508,6 @@
       crossorigin="anonymous"
     ></script>
 
-  
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 
@@ -513,6 +517,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      overflow-x: none;
     }
   </style>
 </html>

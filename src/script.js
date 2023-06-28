@@ -56,7 +56,6 @@ function updateKeranjang(){
         const tr = document.createElement("tr");
          
           const namaTd = document.createElement("td");
-          const hargaTd = document.createElement("td");
           const kuantitasTd = document.createElement("td");
           const totalTd = document.createElement("td");
           const aksiTd = document.createElement("td");
@@ -65,19 +64,19 @@ function updateKeranjang(){
 
           
           namaTd.innerHTML = makanan.nama;
-          hargaTd.innerHTML = formatRupiah(makanan.harga);
+         
           kuantitasTd.innerHTML = makanan.kuantitas;
           totalTd.innerHTML = formatRupiah(makanan.total);
 
 
             // tambah button
           tambahButton.innerHTML = '+';
-          tambahButton.classList.add('btn', 'btn-sm', 'btn-primary', 'me-1');
+          tambahButton.classList.add('btn', 'btn-sm', 'btn-primary', 'w-auto', 'text-center', 'me-1');
           tambahButton.onclick = () => tambahKuantitas(index);
 
         //   kurang button
         kurangButton.innerHTML = '-';
-        kurangButton.classList.add('btn', 'btn-sm', 'btn-danger');
+        kurangButton.classList.add('btn', 'btn-sm', 'btn-danger', 'w-auto', 'text-center');
         kurangButton.onclick = () => kurangiKuantitas(index);
 
         // aksi td
@@ -87,9 +86,9 @@ function updateKeranjang(){
         // tr 
     
         tr.appendChild(namaTd);
-        tr.appendChild(hargaTd);
-        tr.appendChild(kuantitasTd);
         tr.appendChild(totalTd);
+        tr.appendChild(kuantitasTd);
+      
         tr.appendChild(aksiTd);
 
         makananList.appendChild(tr);
